@@ -1,8 +1,8 @@
-# 🐦 CampusTweet Backend
+# 🐦 Co-Links Backend
 
 A **Spring Boot REST API** for a campus-focused microblogging platform where students can connect, share updates, discover classmates, and interact within their college community.
 
-CampusTweet is inspired by Twitter/X but designed specifically for universities and students.
+Co-Links is inspired by Twitter/X but designed specifically for universities and students.
 
 ---
 
@@ -70,7 +70,7 @@ Useful for finding:
 ## 📂 Project Structure
 
 ```text
-CampusTweet
+Co-Links
 
 src/main/java/com/campustweet
 
@@ -187,7 +187,7 @@ http://localhost:8081
 
 Traditional social media platforms connect people globally, but students often need a dedicated space for campus communication.
 
-CampusTweet focuses on:
+Co-Links focuses on:
 
 🎓 Academic Networking  
 💻 Project Collaboration  
@@ -202,7 +202,7 @@ CampusTweet focuses on:
 **Awantika Choudhari**
 **Shreyanshi Rahandale**
 
-MCA Student  
+MCA Students  
 
 ---
 
