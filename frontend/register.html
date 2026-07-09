@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Register</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="loginBox">
+
+
+<h1>Create Account</h1>
+
+
+
+<input 
+id="username"
+placeholder="Username">
+
+
+<input 
+id="email"
+placeholder="Email">
+
+
+<input 
+id="password"
+type="password"
+placeholder="Password">
+
+<input id="course"
+placeholder="Course eg MCA">
+
+
+<input id="year"
+placeholder="Year">
+
+
+<input id="skills"
+placeholder="Skills">
+
+
+<input id="bio"
+placeholder="Bio">
+<button onclick="register()">
+
+Register
+
+</button>
+
+
+</div>
+
+
+
+<script>
+
+
+function register(){
+
+
+let user={
+
+
+username:
+document.getElementById("username").value,
+
+
+email:
+document.getElementById("email").value,
+
+
+password:
+document.getElementById("password").value
+
+
+};
+
+
+
+fetch(
+
+"http://localhost:8081/api/users/register",
+
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+
+body:
+JSON.stringify(user)
+
+
+}
+
+
+)
+
+.then(()=>{
+
+alert("Account Created");
+
+window.location="login.html";
+
+
+});
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
